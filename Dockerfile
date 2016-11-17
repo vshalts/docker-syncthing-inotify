@@ -9,6 +9,7 @@ ENV URL https://github.com/syncthing/syncthing-inotify/releases/download/v${VERS
 
 RUN curl -L "$URL" | tar xzf - && \
     mv syncthing-inotify /usr/local/bin/syncthing-inotify && \
+    chmod a+x /usr/local/bin/syncthing-inotify && \
     rm -rf ${RELEASE} && \
     rm -rf /tmp/* /var/tmp/* /var/cache/apk/* /var/cache/distfiles/*
 
@@ -16,4 +17,4 @@ USER nobody
 
 ENV HOME /app
 
-CMD ["syncthing-inotify"]
+CMD ["/usr/local/bin/syncthing-inotify"]
