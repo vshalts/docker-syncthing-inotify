@@ -14,4 +14,6 @@ RUN curl -L "$URL" | tar xzf - && \
 
 USER nobody
 
+ENV HOME /app
+
 CMD ["syncthing-inotify"]
