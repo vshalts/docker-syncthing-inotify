@@ -13,6 +13,9 @@ RUN curl -L "$URL" | tar xzf - && \
     rm -rf ${RELEASE} && \
     rm -rf /tmp/* /var/tmp/* /var/cache/apk/* /var/cache/distfiles/*
 
+RUN mkdir -p /app/.config/syncthing
+RUN mkdir -p /app/Sync
+
 USER nobody
 
 ENV HOME /app
