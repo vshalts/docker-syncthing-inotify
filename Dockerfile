@@ -1,4 +1,4 @@
-FROM vshalts/alpine:latest
+FROM vshalts/alpine:alpine-3.4
 
 MAINTAINER Vadim Shalts <vshalts@gmail.com>
 
