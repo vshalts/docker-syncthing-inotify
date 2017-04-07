@@ -2,7 +2,7 @@ FROM vshalts/alpine:alpine-3.4
 
 MAINTAINER Vadim Shalts <vshalts@gmail.com>
 
-ENV VERSION 0.8.4
+ENV VERSION 0.8.5
 ENV RELEASE syncthing-inotify-linux-amd64-v${VERSION}
 ENV PACKAGE ${RELEASE}.tar.gz
 ENV URL https://github.com/syncthing/syncthing-inotify/releases/download/v${VERSION}/$PACKAGE
